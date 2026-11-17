@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Biomechanics Tests</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .pass { color: var(--good); font-weight: 700; }
+    .fail { color: var(--work); font-weight: 700; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>Biomechanics pipeline tests</h1>
+    <p class="muted">Synthetic bowling actions with known event times and angles are run through the same analysis code the app uses.</p>
+    <div id="summary" class="card" style="margin-bottom:16px">Running…</div>
+    <div id="out" class="stack"></div>
+  </main>
+  <script type="module" src="run.js"></script>
+</body>
+</html>
